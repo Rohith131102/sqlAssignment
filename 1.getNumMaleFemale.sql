@@ -16,15 +16,15 @@ CREATE TABLE employees (
 );
 -- Insertion of given data
 INSERT INTO employees 
-values 
+VALUES 
   (1, 'X', 'Female', 'Finance'), 
   (2, 'Y', 'Male', 'IT'), 
   (3, 'Z', 'Male', 'HR'), 
   (4, 'W', 'Female', 'IT');
 
 -- Insering a example where department entry is NULL 
-Insert into employees 
-values 
+INSERT INTO employees 
+VALUES 
   (5, 'V', 'Male', null);
  
 -- Procedure holding Query to find the number of male and female employees in each department
@@ -32,7 +32,7 @@ DELIMITER &&
 CREATE PROCEDURE getNumMaleFemale()     -- creating a procedure 
 BEGIN  
 SELECT 
-  IFNULL(Department, 'Not Assigned') as Department, --if Department entry in employees table is null,then we add gender details in Not Assigned
+  IFNULL(Department, 'Not Assigned') AS Department, --if Department entry in employees table is null,then we add gender details in Not Assigned
   COUNT(
     CASE WHEN Gender= 'Male' THEN 1 END        --incrementing the count by 1 whenever male entry is found
   ) AS 'Num of Male', 
@@ -41,7 +41,7 @@ SELECT
   ) AS 'Num of Female' 
 FROM employees 
 GROUP BY Department 
-order by Department;
+ORDER BY Department;
 END &&  
 DELIMITER ;    
 
