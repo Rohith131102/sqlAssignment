@@ -18,6 +18,7 @@ The table employees has four columns:
 2. CASE WHEN - The "CASE WHEN" statement is used to conditionally count the number of occurrences of "Male" and "Female" in the "Gender" column.
 3. IFNULL - The "IFNULL" function is used to handle cases where the "Department" column has a NULL value.
 #### TestRun
+<img width="465" alt="Screenshot 2023-02-18 at 8 53 00 PM" src="https://user-images.githubusercontent.com/123619674/219874063-82ab8123-ff97-46a0-a45a-799facb848dd.png">
 
 ### Question-2
 Given a table with salaries of employees for different month, find the max amount from the rows with month name
@@ -36,6 +37,8 @@ Check constraint for Jan,Feb and March row which allows only positive values for
 1.  Greatest - The "greatest" function is used to determine the maximum value from the columns "Jan", "Feb", and "March".
 2.  Field - The "field" function is used to determine the position of the maximum value in the list.
 #### TestRun
+<img width="220" alt="Screenshot 2023-02-18 at 8 58 12 PM" src="https://user-images.githubusercontent.com/123619674/219874187-b2b61cb3-4ebf-4884-81ed-1cd19c84ec7e.png">
+
 ### Question-3
 Given the marks obtained by candidates in a test, rank them in proper order
 #### Table Test and its Constraints
@@ -47,6 +50,7 @@ Ranking the students based on their marks  using "dense_rank()" function and gro
 1.  dense_rank() - The "dense_rank()" function is used to calculate the rank of each candidate based on their marks,
 2.  GROUP_CONCAT() - The "GROUP_CONCAT()" function is used to concatenate the candidate IDs of all candidates with the same marks into a single string.
 #### TestRun
+<img width="271" alt="Screenshot 2023-02-18 at 9 00 45 PM" src="https://user-images.githubusercontent.com/123619674/219874339-3f20e8ad-771c-4efc-a90c-f1ae60c86204.png">
 
 ### Question-4
 #### Table EmailIDs and its Constraints
@@ -57,5 +61,5 @@ The table has two columns:
 #### Approach
 Using Inner Join and fetching the candidate_id's which has same email id and larger candidate_id and deleting them from table "EmailIDs"
 #### TestRun
-
+<img width="235" alt="Screenshot 2023-02-18 at 9 01 45 PM" src="https://user-images.githubusercontent.com/123619674/219874395-90dfcef9-df23-46f6-9f28-0d3e98bddc85.png">
 
