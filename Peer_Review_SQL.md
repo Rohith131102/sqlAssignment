@@ -1,6 +1,6 @@
  ## SQL ASSIGNMENT
 ### Peer Learning Document
-#### Raj Keshav's Approach
+### Raj Keshav's Approach
 #### *Question 1*
  In the main query, he used aggregated function  **SUM**  and  he used **CASE**  statement inside it for finding number of male and female employees. Sum is increased by 1 when 'Male' is encountered and 1 when 'Female' is encountered in separate columns. Then Used  **GROUP BY**  clause for grouping the table according to the Department.
 #### *Question 2*
@@ -14,7 +14,7 @@ He used  **GROUP_CONCAT()**  by candidate_id for displaying multiple id of stude
 Candidate_email table is self joined using  **JOIN**  Clause.
 Then, deleting the rows, which have same email and c1's id is greater than c2's id, it will keep the lowest id's value in the table.
 
-#### Amit Shukla's Approach
+### Amit Shukla's Approach
 #### *Question 1*
  he used aggregated function  **SUM**  and  he used **CASE**  statement inside it for finding number of male and female employees. Sum is increased by 1 when 'Male' is encountered and 1 when 'Female' is encountered in separate columns. Then Used  **GROUP BY**   clause for grouping the table according to the Department and **ORDER BY** to display table in ascending order according to the Department.
 #### *Question 2*
