@@ -1,6 +1,7 @@
  ## SQL ASSIGNMENT
 ### Peer Learning Document
 <p>&nbsp;</p>
+
 ### Amit Shukla's Approach
 #### *Question 1*
  he used aggregated function  **SUM**  and  he used **CASE**  statement inside it for finding number of male and female employees. Sum is increased by 1 when 'Male' is encountered and 1 when 'Female' is encountered in separate columns. Then Used  **GROUP BY**   clause for grouping the table according to the Department and **ORDER BY** to display table in ascending order according to the Department.
