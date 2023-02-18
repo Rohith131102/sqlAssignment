@@ -13,8 +13,10 @@ He used  **GROUP_CONCAT()**  by candidate_id for displaying multiple id of stude
 #### *Question 4*
 He created a virtual table Temp_info  using **VIEW** which contains only the smallest candidate id if email is same.
 He grouped the data by email id and used **MIN** to fetch the smallest candidate id and then deleted the candidate_id which are **NOT IN** Temp_info
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
 ### Raj Keshav's Approach
 #### *Question 1*
  In the main query, he used aggregated function  **SUM**  and  he used **CASE**  statement inside it for finding number of male and female employees. Sum is increased by 1 when 'Male' is encountered and 1 when 'Female' is encountered in separate columns. Then Used  **GROUP BY**  clause for grouping the table according to the Department.
